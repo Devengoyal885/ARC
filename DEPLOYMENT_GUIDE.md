@@ -32,6 +32,77 @@ pip install -e .
 
 ---
 
+## Beginner Setup Guide
+
+### Create a Virtual Environment
+
+Using a virtual environment is recommended to avoid dependency conflicts.
+
+#### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+#### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Upgrade pip
+
+```bash
+python -m pip install --upgrade pip
+```
+
+### Verify Installation
+
+Run Python:
+
+```bash
+python
+```
+
+Then:
+
+```python
+from arc import Arc
+print("ARC installed successfully")
+```
+
+If no errors appear, ARC is installed correctly.
+
+### Troubleshooting
+
+#### ModuleNotFoundError
+
+Reinstall the package:
+
+```bash
+pip install -e .
+```
+
+#### Outdated pip
+
+```bash
+python -m pip install --upgrade pip
+```
+
+#### PyTorch Installation Issues
+
+Install PyTorch first:
+
+```bash
+pip install torch
+```
+
+Then reinstall ARC.
+
+---
+
 ## Integration
 
 ### Vanilla PyTorch — 3 Lines
