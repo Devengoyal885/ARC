@@ -79,10 +79,16 @@ If no errors appear, ARC is installed correctly.
 
 #### ModuleNotFoundError
 
-Reinstall the package:
+If you cloned the ARC repository and are working from the project root directory, reinstall using:
 
 ```bash
 pip install -e .
+```
+
+If you installed ARC from PyPI, upgrade the package using:
+
+```bash
+pip install --upgrade arc-training
 ```
 
 #### Outdated pip
